@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:hello/hello.dart';
 
 void main() {
   runApp(const MyApp());
@@ -31,7 +32,9 @@ class MyHomePage extends StatelessWidget {
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
         title: Text(title),
       ),
-      body: Container(),  
+      body: Center(
+        child: Text(getHelloMessage()),
+      ),
     );
   }
 }
